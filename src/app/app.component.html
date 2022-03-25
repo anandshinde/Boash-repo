@@ -1,0 +1,45 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+
+</div>
+ <div class="content" role="main">
+    <input type="hidden" #selection>
+       <!-- Terminal -->
+       <div class="terminal" [ngSwitch]="selection.value">
+           <pre *ngSwitchDefault style="color: azure; background-color: gray;  font-family: 'Times New Roman', Times, serif; font-size: 14px;">Company Name</pre>
+           <div class="task-b">
+            <div class="container">
+               <div class="row">
+                  <div class="col-2" style="border:1px solid black;">
+
+          <input type="button" href="#myModal" class="trigger-btn side-btn" data-toggle="modal" routerLink="/task" value="Task" style="width: 82px; background-color: black; color: azure;"><br>
+          <input type="button"  routerLink="/contactUs" class="side-btn" value="Contact Us"  style="margin-top: 2px; color: azure; background-color: gray;">
+          <!-- <div class="container">
+             <div class="row">
+                <div class="col-2" style="border:1px solid black;"> -->
+                  
+                </div>
+                <div class="col-10" style="border: rgb(12, 14, 14) 1px solid; height: 400px;">
+                  <h4>Create Task</h4>
+                   <table class="table">
+                      <thead class="thead-gray">
+                         <tr>
+                            <th scope="col">Task Id</th>
+                            <th scope="col">Task Name</th>
+                            <th scope="col">project</th>
+                            <th scope="col">comments</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                         </tr>
+                      </thead>
+                   </table>
+                </div>
+             </div>
+            
+         </div> 
+          </div>    
+           
+ </div>
+
+
+<router-outlet></router-outlet>
